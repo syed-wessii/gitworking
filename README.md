@@ -25,22 +25,9 @@ ansible --version
 
 **Screenshot:**
 
-![alt text](<2026-08-20 21_29_51-Downloads - File Explorer.png>)
+<img width="946" height="214" alt="2026-08-20 21_29_51-Downloads - File Explorer" src="https://github.com/user-attachments/assets/2a83148c-837c-4948-b381-7aaa1b64c997" />
 
----
-
-## 1. Inventory Verification
-
-The inventory was checked to make sure `control_node_1` was available as the managed host.
-
-Command used:
-
-```bash
-ansible-inventory --graph
 ```
-
-**Screenshot:**
-![alt text](<2026-08-20 21_30_18-Downloads - File Explorer.png>)
 ---
 
 ## 2. Ansible Connectivity Test
@@ -57,7 +44,8 @@ The expected response is `pong`.
 
 **Screenshot:**
 
-![alt text](<2026-08-20 21_30_18-Downloads - File Explorer-1.png>)
+<img width="946" height="214" alt="2026-08-20 21_29_51-Downloads - File Explorer" src="https://github.com/user-attachments/assets/0c606975-625b-4fc9-882e-e1f4e74924ff" />
+
 
 ---
 
@@ -78,7 +66,8 @@ ansible control_node_1 -b -m apt -a "name=zsh,acl state=present update_cache=yes
 
 **Screenshot:**
 
-![alt text](<2026-08-20 21_30_57-Downloads - File Explorer.png>)
+<img width="956" height="524" alt="2026-08-20 21_30_57-Downloads - File Explorer" src="https://github.com/user-attachments/assets/1552f355-e448-4254-bfff-67e5e4da50e8" />
+
 
 A second run was used to verify that the packages were already present and no further changes were required.
 
@@ -90,7 +79,8 @@ ansible control_node_1 -b -m apt -a "name=zsh,acl state=present"
 
 **Screenshot:**
 
-![alt text](<2026-08-20 21_31_52-.png>)
+<img width="956" height="548" alt="2026-08-20 21_31_52-" src="https://github.com/user-attachments/assets/894d9d9b-24e2-426b-82ee-64da573191aa" />
+
 
 ---
 
@@ -120,7 +110,9 @@ ansible control_node_1 -b -m group -a "name=admin-group state=present"
 
 **Screenshot:**
 
-![alt text](<2026-08-20 21_34_15-Downloads - File Explorer.png>)
+<img width="953" height="533" alt="2026-08-20 21_36_06-" src="https://github.com/user-attachments/assets/d855a6a4-be43-4752-b194-3c4500dd127b" />
+<img width="952" height="528" alt="2026-08-20 21_37_08-Downloads - File Explorer" src="https://github.com/user-attachments/assets/5f936e4e-2e03-4364-952e-d614e8f38204" />
+
 
 ---
 
@@ -149,9 +141,9 @@ Nine users were created and assigned to their respective groups.
 The users were also configured with the required login shells.
 
 **Screenshot:**
+<img width="948" height="127" alt="2026-08-20 21_38_38-Downloads - File Explorer" src="https://github.com/user-attachments/assets/20c7ed63-239f-4b70-97a1-690aaa8fdc51" />
 
-![alt text](<2026-08-20 21_36_06-.png>)
-![alt text](<2026-08-20 21_37_08-Downloads - File Explorer.png>)
+
 ---
 
 ## 6. User IDs and Group Membership Verification
@@ -180,7 +172,8 @@ Expected UIDs:
 
 **Screenshot:**
 
-![alt text](<2026-08-20 21_38_38-Downloads - File Explorer.png>)
+<img width="944" height="455" alt="2026-08-21 18_19_39-screenshots to be saved - File Explorer" src="https://github.com/user-attachments/assets/f694bdce-b0df-4325-8998-8050b6132ba2" />
+
 
 ---
 
@@ -198,7 +191,8 @@ The output verifies the users' account information, including their login shell.
 
 **Screenshot:**
 
-![alt text](<2026-08-21 18_19_39-screenshots to be saved - File Explorer.png>)
+<img width="944" height="455" alt="2026-08-21 18_19_39-screenshots to be saved - File Explorer-1" src="https://github.com/user-attachments/assets/67528730-70e1-4896-af36-200689237dad" />
+
 
 ---
 
@@ -216,7 +210,8 @@ The output was checked for password expiry and related account policy settings.
 
 **Screenshot:**
 
-![alt text](<2026-08-21 18_19_39-screenshots to be saved - File Explorer-1.png>)
+<img width="944" height="455" alt="2026-08-21 18_19_39-screenshots to be saved - File Explorer-1" src="https://github.com/user-attachments/assets/b5434f2d-d6c4-45d8-b36c-91bd84e90839" />
+
 
 ---
 
@@ -234,7 +229,8 @@ The output verifies that the workspace directories exist under the users' home d
 
 **Screenshot:**
 
-![alt text](<2026-08-20 21_38_38-Downloads - File Explorer-1.png>)
+<img width="948" height="127" alt="2026-08-20 21_38_38-Downloads - File Explorer-1" src="https://github.com/user-attachments/assets/944f623e-615d-40e8-865d-f0404e3208e9" />
+
 
 ---
 
@@ -252,7 +248,8 @@ The directory structure includes the project-management area and its subdirector
 
 **Screenshot:**
 
-![alt text](<2026-08-21 18_21_31-screenshots to be saved - File Explorer.png>)
+<img width="960" height="185" alt="2026-08-21 18_21_31-screenshots to be saved - File Explorer" src="https://github.com/user-attachments/assets/8a038865-7894-4a9c-b3a2-23d7f63df171" />
+
 
 ---
 
@@ -270,7 +267,8 @@ The ACL output was used to verify the access granted to the different groups.
 
 **Screenshot:**
 
-![alt text](<2026-08-20 21_39_52-Downloads - File Explorer.png>)
+<img width="960" height="346" alt="2026-08-20 21_39_52-Downloads - File Explorer" src="https://github.com/user-attachments/assets/41e9cb2f-1e8b-453a-a42f-1c8f97f04863" />
+
 
 ---
 
@@ -287,8 +285,8 @@ ansible control_node_1 -b -m shell -a "getfacl /opt/project-management/shared-re
 This verifies the permissions and default ACL entries configured for the project-management directories.
 
 **Screenshot:**
+<img width="952" height="482" alt="2026-08-21 18_23_21-" src="https://github.com/user-attachments/assets/141b1b9f-6802-4a0f-bbff-79ebbc6f0122" />
 
-![alt text](<2026-08-21 18_23_21-.png>)
 
 ---
 
